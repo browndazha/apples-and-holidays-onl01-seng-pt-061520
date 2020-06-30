@@ -6,7 +6,7 @@ end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_supplies[:winter][:christmas] = ["Lights", "Wreath"]
-  holiday_supplies[:winter][:new_years]<<"Party Hats"
+  holiday_supplies[:winter][:new_years] << "Party Hats"
 end
 
 
@@ -15,7 +15,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  holiday_supplies[:fall][:thanksgiving] = << "Turkey"
+  holiday_supplies[:fall][:thanksgiving] << "Turkey"
 end
 
 def all_winter_holiday_supplies(holiday_hash)
