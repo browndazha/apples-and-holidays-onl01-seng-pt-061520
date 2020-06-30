@@ -24,15 +24,15 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  # holiday_hash is identical to the one above 
-  # add the second argument, which is a supply, to BOTH the 
+  # holiday_hash is identical to the one above
+  # add the second argument, which is a supply, to BOTH the
   # Christmas AND the New Year's arrays
 
   holiday_supplies[:winter][:christmas] << supply
   holiday_supplies[:winter][:new_years] << supply
-  
+
 end
- 
+
 
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
@@ -44,7 +44,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # code here
   # remember to return the updated hash
   holiday_supplies[season][holiday_name] = supply_array
-  
+
 end
 
 def all_winter_holiday_supplies(holiday_hash)
@@ -72,11 +72,11 @@ def all_supplies_in_holidays(holiday_hash)
       split_holiday = holiday.to_s.split("_").collect do |word|
         words = word.capitalize!
       end.join(" ")
-      
-      puts "  #{split_holiday}: #{supplies.join(", ")}" 
-    end 
+
+      puts "  #{split_holiday}: #{supplies.join(", ")}"
+    end
   end
-  
+
 end
 
 #all_supplies_in_holidays(holiday_supplies)
@@ -86,14 +86,13 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 holidays_with_BBQ = []
   holiday_supplies.collect do |season, holidays|
-  
+
     holidays.collect do |holiday, supplies|
       if supplies.include?("BBQ")
-         holidays_with_BBQ << holiday 
+         holidays_with_BBQ << holiday
       end
     end
-    
+
   end
   holidays_with_BBQ.uniq
 end
-
