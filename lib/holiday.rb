@@ -16,8 +16,6 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_supplies[:fall][:thanksgiving] = << "Turkey"
-  holiday_supplies[:winter][:valentines_day] = ["Cupid Cut-Out", "Candy Hearts"]
-  holiday_supplies
 end
 
 def all_winter_holiday_supplies(holiday_hash)
